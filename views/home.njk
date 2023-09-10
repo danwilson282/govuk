@@ -1,0 +1,12 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <h1 class="govuk-heading-xl">{{ pageHeading }}</h1>
+    <p class="govuk-body">{{ pageText }}</p>
+    <button class="govuk-button" onclick="run()">{{ buttonText }}</button>
+    <script>
+        function run(){
+            alert("Please welcome our new Prime Minister, The Rt Honorable Dan Wilson")
+        }
+    </script>
+{% endblock %}
